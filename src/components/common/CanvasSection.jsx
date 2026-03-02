@@ -2,7 +2,6 @@
 import { PerspectiveCamera} from "@react-three/drei";
 import { Canvas} from "@react-three/fiber";
 import { useEffect, useState } from "react";
-import ProjectScene from "../projects/ProjectScene";
 
 const CanvasSection = () => {
   const distance = 200;
@@ -23,7 +22,7 @@ const CanvasSection = () => {
     <div className="w-full h-screen fixed top-0 left-0 z-[-1]">
       <Canvas className="w-full h-screen">
         <PerspectiveCamera makeDefault fov={fov} position={[0, 0, distance]} />
-        <ProjectScene/>
+       
       </Canvas>
     </div>
   );

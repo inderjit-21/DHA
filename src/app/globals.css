@@ -11,3 +11,55 @@ body {
   cursor: none;
 }
 
+
+@font-face {
+  font-family: FontBlack;
+  src: url('/fonts/TrapBlack.woff2');
+}
+@font-face {
+  font-family: FontBold;
+  src: url('/fonts/TrapBold.woff2');
+}
+@font-face {
+  font-family: FontExtraBold;
+  src: url('/fonts/TrapExtraBold.woff2');
+}
+@font-face {
+  font-family: FontLight;
+  src: url('/fonts/TrapLight.woff2');
+}
+@font-face {
+  font-family: FontRegular;
+  src: url('/fonts/TrapRegular.woff2');
+}
+@font-face {
+  font-family: FontSemiBold;
+  src: url('/fonts/TrapSemiBold.woff2');
+}
+@font-face {
+  font-family: FontMedium;
+  src: url('/fonts/TrapMedium.woff2');
+}
+
+
+.FontBlack{
+  font-family: FontBlack;
+}
+.FontBold{
+  font-family: FontBold;
+}
+.FontExtraBold{
+  font-family: FontExtraBold;
+}
+.FontLight{
+  font-family: FontLight;
+}
+.FontRegular{
+  font-family: FontRegular;
+}
+.FontSemiBold{
+  font-family: FontSemiBold;
+}
+.FontMedium{
+  font-family: FontMedium;
+}
