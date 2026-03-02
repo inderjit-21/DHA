@@ -224,7 +224,7 @@ const ProjectStructure = () => {
           </div>
 
           {/* bottom-Container */}
-          <div className=" w-full h-full flex">
+          <div className=" w-full h-full flex absolute bottom-0 left-0">
             {/* Left */}
             <div className="w-1/2 h-full flex  justify-start items-center px-10">
               <p className="text-[#53462e]">(Scroll)</p>
