@@ -41,7 +41,7 @@ const CursorFollow = () => {
 
   return (
     // Top-Screen-Fixed-Container
-    <div className="fixed top-0 left-0 w-full h-screen mix-blend-difference overflow-hidden pointer-events-none select-none flex items-center justify-center z-90">
+    <div className="fixed top-0 left-0 w-full h-screen max-md:hidden mix-blend-difference overflow-hidden pointer-events-none select-none flex items-center justify-center z-90">
       {/* Mouse-Follow-div */}
       <div
         ref={MFD}
