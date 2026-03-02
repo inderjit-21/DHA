@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  cursor: none;
+  background-color: white;
+  position: relative;
+  font-family: Helvetica;
+}
+
+* {
+  cursor: none;
+}
+
