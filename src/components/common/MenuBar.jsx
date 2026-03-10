@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import { FiCornerRightUp } from "react-icons/fi";
 import gsap from "gsap";
 import { MdArrowOutward } from "react-icons/md";
-import { useRouter } from "next/navigation" 
+import { useRouter } from "next/navigation";
 
 const MenuBar = () => {
   const [isMenuopen, SetIsMenuOpen] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   const MenuChangeStatusOpenClose = () => {
     if (isMenuopen == true) {
@@ -87,9 +87,9 @@ const MenuBar = () => {
   ];
 
   const MenuClickWork = (item) => {
-    MenuChangeStatusOpenClose()
-    router.push(item)
-  }
+    MenuChangeStatusOpenClose();
+    router.push(item);
+  };
 
   return (
     <>
@@ -113,21 +113,27 @@ const MenuBar = () => {
         </div>
         {/* Menu Data */}
         <div className="w-full h-full absolute top-0 left-0  flex flex-col px-5 py-10">
-          {
-            menuData.map((item,index)=>{
-              return(
-                <div key={index} className={`w-full  py-2 px-5 relative overflow-hidden group`}>
-                  <p onClick={()=> MenuClickWork(item.link)} className="text-[5.5vh] leading-[5.5vh] z-50 text-white mix-blend-difference flex gap-2 FontMedium ">
-                    {item.name} <span className="text-[2.5vh] leading-[2.5vh] opacity-0  transition-all duration-200 ease-in group-hover:opacity-100"><MdArrowOutward /></span>
-                  </p>
+          {menuData.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className={`w-full  py-2 px-5 relative overflow-hidden group`}
+              >
+                <p
+                  onClick={() => MenuClickWork(item.link)}
+                  className="text-[5.5vh] leading-[5.5vh] z-50 text-white mix-blend-difference flex gap-2 FontMedium "
+                >
+                  {item.name}{" "}
+                  <span className="text-[2.5vh] leading-[2.5vh] opacity-0  transition-all duration-200 ease-in group-hover:opacity-100">
+                    <MdArrowOutward />
+                  </span>
+                </p>
 
-                  {/* Background-Fill-Up */}
-                  <div className="w-full h-full absolute top-full left-0 z-[-1] transition-all duration-200 ease-in group-hover:top-0 bg-[#f5f5f5]"></div>
-                  
-                </div>
-              )
-            })
-          }
+                {/* Background-Fill-Up */}
+                <div className="w-full h-full absolute top-full left-0 z-[-1] transition-all duration-200 ease-in group-hover:top-0 bg-[#f5f5f5]"></div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
